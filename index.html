@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Game Reminder</title>
+    <style>
+        canvas {
+            position: relative;
+            display: block;
+            width: 600px;
+            margin: 0 auto;
+            border: 1px solid grey;
+        }
+        .components {
+            display: none;
+        }
+        .panes {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="components">
+        <img src="./assets/jet.png" id="jet" alt="jet">
+        <img src="./assets/enemy.png" id="enemy" alt="enemy">
+        <img src="./assets/missile.png" id="missile" alt="missile">
+        <img src="./assets/enemy_missile.png" id="enemy_missile" alt="emissile">
+    </div>
+    <div class="panes">
+        <div>
+            Ideas:
+            <ul>
+                <li>Add health pack floaters</li>
+                <li>Ammo refill floaters</li>
+                <li>Nuke floater after every 20 enemies killed without a life lost</li>
+            </ul>
+        </div>
+        <canvas id="stage" width="600" height="450"></canvas>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
